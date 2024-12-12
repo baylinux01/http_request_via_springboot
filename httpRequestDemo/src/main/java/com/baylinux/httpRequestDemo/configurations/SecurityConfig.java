@@ -92,7 +92,8 @@ public class SecurityConfig{
 	{
 		return new BCryptPasswordEncoder(12);
 	}
-	@Bean RestTemplate restTemplate() 
+	@Bean 
+	public RestTemplate restTemplate() 
 	{
 		return new RestTemplate();
 	}
