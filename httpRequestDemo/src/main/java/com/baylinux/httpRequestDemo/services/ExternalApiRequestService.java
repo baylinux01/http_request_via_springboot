@@ -57,10 +57,14 @@ public class ExternalApiRequestService {
 		//headers.setBearerAuth(token);
 		headers.setContentType(MediaType.APPLICATION_JSON);
 		
+//		String requestJson="{\"name\":\"Ali\",\"surname\":\"RastgeleSoyadı\",\"age\":30}";
+//		HttpEntity<String> entity=new HttpEntity<String>(requestJson,headers);
+		
 		MyHttpRequest myHttpRequest=new MyHttpRequest();
 		myHttpRequest.setName("Ali");
 		myHttpRequest.setSurname("RastgeleSoyadı");
 		myHttpRequest.setAge(35);
+		
 		HttpEntity<MyHttpRequest> entity=new HttpEntity<MyHttpRequest>(myHttpRequest,headers);
 		
 		String url="https://httpbin.org/post";
