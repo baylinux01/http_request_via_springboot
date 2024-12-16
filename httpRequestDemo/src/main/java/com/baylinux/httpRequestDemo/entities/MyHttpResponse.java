@@ -1,23 +1,29 @@
 package com.baylinux.httpRequestDemo.entities;
 
-import java.util.List;
-
 public class MyHttpResponse {
-	private String status;
-	private List<Article> articles;
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
-	}
-	public List<Article> getArticles() {
-		return articles;
-	}
-	public void setArticles(List<Article> articles) {
-		this.articles = articles;
-	}
-	
-	
 
+	private String data;
+	private String origin;
+	private String url;
+	
+	public String getData() {
+		return data;
+	}
+	public void setData(String data) {
+		this.data = data;
+	}
+	public String getOrigin() {
+		return origin;
+	}
+	public void setOrigin(String origin) {
+		this.origin = origin;
+	}
+	public String getUrl() {
+		return url;
+	}
+	public void setUrl(String url) {
+		this.url = url;
+	}
+	
+	
 }
