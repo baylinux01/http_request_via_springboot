@@ -36,7 +36,16 @@ public class ExternalApiRequestController {
 	{
 		return externalApiRequestService.doGetRequest(request);
 	}
-	
+	@GetMapping("/doGetRequestWithUrlParameters")
+	public MyHttpResponse doGetRequestWithUrlParameters(HttpServletRequest request,Long id)
+	{
+		return externalApiRequestService.doGetRequestWithUrlParameters(request,id);
+	}
+	@GetMapping("/doGetRequestWithSendingObject")
+	public MyHttpResponse doGetRequestWithSendingObject(HttpServletRequest request)
+	{
+		return externalApiRequestService.doGetRequestWithSendingObject(request);
+	}
 	@PostMapping("/doPostRequest")
 	public MyHttpResponse doPostRequest(HttpServletRequest request)
 	{
